@@ -1,0 +1,289 @@
+<button class="btn btn-dark" routerLink="/home">Logout</button>
+  <div class="basic">
+      <h1>SCHOLARSHIP APPLICATION DETAILS</h1>
+      <form class="row g-3"  method="post" enctype="multipart/form-data" #scholarshipForm="ngForm" (ngSubmit)="savescholarshipDetails(scholarshipForm)">
+        <div class="col-4">
+          <label for="inputEmail" class="form-label">Full Name</label>
+          <input [(ngModel)]="student.name" type="text" name="name" class="form-control" id="name" placeholder="" ngModel readonly="true">
+        </div>
+        <div class="col-4">
+          <label for="inputEmail" class="form-label">Registered Email</label>
+          <input [(ngModel)]="student.email" type="email" name="email" class="form-control" id="email" placeholder="" ngModel readonly="true">
+        </div>
+        <div class="col-4">
+          <label for="inputPhoneNo" class="form-label">Registered Phone Number</label>
+          <input [(ngModel)]="student.mobileNumber"type="number" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="" ngModel readonly="true">
+        </div>
+        <div class="col-md-6">
+          <label for="inputAadhar" class="form-label">AADHAR NUMBER</label>
+          <input [(ngModel)]="username" type="text" name="aadhar" class="form-control" id="aadhar" ngModel readonly="true">
+        </div>
+        <div class="col-md-4">
+          <label for="inputDOB" class="form-label"> DOB :</label> 
+          <input formControlName="dob" [(ngModel)]="student.dateOfBirth" type="date" class="form-control" id="inputDob" placeholder=""  >
+      </div>
+        <div class="col-md-4">
+            <label for="inputReligion" class="form-label">RELIGION</label>
+            <select id="inputReligion" name="religion" class="form-select" id="religion" ngModel>
+              <option selected>select your religion</option>
+              <option>Hindu</option>
+              <option>Muslim</option>
+              <option>Christian</option>
+              <option>Sikh</option>
+              <option>Other</option>
+            </select>
+        </div>
+        <div class="col-6">
+          <label for="inputCommunity" class="form-label">COMMUNITY/CATEGORY</label>
+          <input type="text" name="community" class="form-control" id="community" placeholder="" ngModel>
+        </div>
+        <div class="col-6">
+          <label for="inputFatherName" class="form-label">FATHER NAME</label>
+          <input type="text" name="fatherName" class="form-control" id="fatherName" ngModel>
+        </div>
+        <div class="col-md-6">
+          <label for="inputMotherName" class="form-label">MOTHER NAME</label>
+          <input type="text" name="motherName" class="form-control" id="motherName" ngModel>
+        </div>
+        <div class="col-md-6">
+          <label for="inputfamilyannualincome" class="form-label">FAMILY ANNUAL INCOME</label>
+          <input type="number" name="annualIncome" id="annualIncome" class="form-control" ngModel>
+        </div>
+        <hr>
+        <h1>ACADEMIC DETAILS</h1>
+        
+        <div class="col-md-4">
+            <label for="inputInstitutionName" class="form-label">INSTITUTION NAME</label>
+            <input type="text" name="instiCode" class="form-control" id="instiCode" ngModel>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputInstitutionName" class="form-label">INSTITUTION CODE</label>
+          <input type="text" name="institution" class="form-control" id="institution" ngModel>
+      </div>
+
+        <div class="col-4">
+            <label for="inputPresentClass" class="form-label">Present Class</label>
+            <input type="text" name="presentClass" class="form-control" id="presentClass" placeholder="" ngModel>
+        </div>
+        <div class="col-4">
+            <label for="inputPresentClassYear" class="form-label">Present Class Year</label>
+            <input type="text" name="presentClassYear"class="form-control" id="presentClassYear" placeholder="" ngModel>
+        </div>
+        <div class="col-md-4">
+            <label for="inputModeofStudy" class="form-label">MODE OF STUDY</label>
+            <select name="modeOfStudy" class="form-select" id="modeOfStudy" ngModel>
+              <option selected>Mode of Study</option>
+              <option>Regular</option>
+              <option>Distance</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <label for="inputClassStartDate" class="form-label">Class Start Date</label>
+            <input type="date" name="classStartDate" class="form-control" id="classStartDate" placeholder="" ngModel>
+        </div>
+        <div class="col-6">
+            <label for="inputUniversityName" class="form-label">University/BoardName</label>
+            <input type="text" name="university" class="form-control" id="university" placeholder="" ngModel >
+        </div>
+        <div class="col-4">
+            <label for="inputPreviousClass" class="form-label">Previous Class</label>
+            <input type="text" name="previousClass" class="form-control" id="previousClass" placeholder="" ngModel>
+        </div>
+        <div class="col-4">
+            <label for="inputPreviousClassYear" class="form-label">Previous Class Year</label>
+            <input type="text" name="previousClassYear" class="form-control" id="previousClassYear" placeholder="" ngModel >
+        </div>
+        <div class="col-md-4">
+            <label for="inputpreviouspercentage" class="form-label">Previous Class Percentage</label>
+            <input type="text"name="previousPercentage" id="previousPercentage" class="form-control" ngModel>
+        </div>
+        <hr>
+
+        <h1>X<sup>th</sup>CLASS</h1>
+        <div class="col-md-6">
+            <label for="inputRollNo" class="form-label">ROLL NUMBER</label>
+            <input type="text" name="tenthRollNo" class="form-control" id="tenthRollNo" ngModel>
+        </div>
+        <div class="col-6">
+            <label for="inputBoardName" class="form-label">BOARD NAME</label>
+            <input type="text" name="tenthBoard" class="form-control" id="tenthBoard" placeholder="" ngModel>
+        </div>
+        <div class="col-6">
+            <label for="inputPassingYear" class="form-label">Passing Year</label>
+            <input type="text" name="tenthYear" class="form-control" id="tenthYear" placeholder="" ngModel>
+        </div>
+        <div class="col-md-4">
+            <label for="inputpercentage" class="form-label">Percentage Obtained</label>
+            <input type="number" name="tenthPercentage" id="tenthPercentage" class="form-control" ngModel>
+        </div>
+        <hr>
+
+        <h1>XII<sup>th</sup>CLASS</h1>
+        <div class="col-md-6">
+          <label for="inputRollNo" class="form-label">ROLL NUMBER</label>
+          <input type="text" name="twelthRollNo" class="form-control" id="twelthRollNo" ngModel>
+        </div>
+        <div class="col-6">
+            <label for="inputBoardName" class="form-label">BOARD NAME</label>
+            <input type="text" name="twelthBoard;" class="form-control" id="twelthBoard" placeholder="" ngModel>
+        </div>
+        <div class="col-6">
+            <label for="inputPassingYear" class="form-label">Passing Year</label>
+            <input type="number" name="twelthYear" class="form-control" id="twelthYear" placeholder="" ngModel>
+        </div>
+        <div class="col-md-4">
+          <label for="inputpercentage" class="form-label">Percentage Obtained</label>
+          <input type="text" name="twelthPercentage" id="twelthPercentage" class="form-control" ngModel>
+        </div>
+        <hr>
+        <h1>FEE DETAILS</h1>
+        <div class="col-md-4">
+            <label for="inputAdmissionFee" class="form-label">ADMISSION FEE</label>
+            <input type="number" name="admissionFee" class="form-control" id="admissionFee" ngModel>
+        </div>
+        <div class="col-md-4">
+          <label for="inputTuitionFee" class="form-label">TUITION FEE</label>
+          <input type="number" name="tuitionFee" class="form-control" id="tuitionFee" ngModel>
+        </div>
+        <div class="col-md-4">
+          <label for="inputOtherFee" class="form-label">OTHER FEE</label>
+          <input type="number" name="otherFee" class="form-control" id="otherFee" ngModel>
+        </div>
+        
+        <hr>
+        <h1>OTHER PERSONAL DETAILS</h1>
+        <div class="col-md-6" >
+            <label for="inputIsDisabled" class="form-label">IS DISABLED</label>
+            <select id="inputIsDisabled" name="isDisabled" class="form-select" id="isDisabled" ngModel>
+              <option selected>Select </option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <label for="inputTypeofDisablity" class="form-label">TYPE OF DISABILITY</label>
+            <input type="text" name="typeOfDisability" class="form-control" id="typeOfDisability" placeholder="" ngModel>
+        </div>
+        <div class="col-6">
+            <label for="inputpercentageofdisability" class="form-label">PERCENTAGE OF DISABILITY</label>
+            <input type="text" name="disabilityPercenage" class="form-control" id="disabilityPercenage" ngModel>
+        </div>
+        <div class="col-md-6">
+          <label for="inputMaritalStatus" class="form-label">MARITAL STATUS</label>
+          <select id="inputMaritalStatus" name="maritalStatus" class="form-select" id="maritalStatus" ngModel>
+            <option selected>Select </option>
+            <option>MARRIED</option>
+            <option>SINGLE</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label for="inputParentsProfession" class="form-label">PARENTS PROFESSION</label>
+          <input type="text" name="parentsProfession" class="form-control" id="parentsProfession" placeholder="" ngModel>
+        </div>
+
+        <hr>
+        <h1>CONTACT DETAILS</h1>
+        <div class="col-6">
+          <label for="inputState" class="form-label">STATE</label>
+          <select id="inputState" name="state" class="form-select" id="state" ngModel>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label for="inputDistrict" class="form-label">DISTRICT</label>
+          <input type="text" name="district" class="form-control" id="district" placeholder="Please enter your district" ngModel>
+        </div>
+        <div class="col-6">
+          <label for="inputTaluk" class="form-label">TALUK/Mandal</label>
+          <input type="text" name="taluk" class="form-control" id="taluk" placeholder="Please enter your Taluk / Mandal" ngModel>
+        </div>
+        <div class="col-6">
+          <label for="inputHno" class="form-label">HOUSE NUMBER</label>
+          <input type="text" name="houseNo" class="form-control" id="houseNo" placeholder="" ngModel>
+        </div>
+        <div class="col-6">
+          <label for="inputStreetno" class="form-label">STREET NUMBER</label>
+          <input type="text" name="streerNo" class="form-control" id="streerNo" placeholder="" ngModel>
+        </div>
+        <div class="col-6">
+          <label for="inputPincode" class="form-label">PINCODE</label>
+          <input type="text" name="pincode" class="form-control" id="pincode" placeholder="" ngModel>
+        </div>
+        <div class="col-4">
+            <label for="gender" class="form-label" >GENDER  </label> <br>
+            <input type="radio" class="form-input" value="male" name="gender" [(ngModel)]="optionValue" ngModel>&nbsp;Male  &nbsp;
+            <input type="radio" class="form-input" value="female" name="gender" [(ngModel)]="optionValue" ngModel>&nbsp;Female
+            </div>
+        <div class="col-6">
+          <label for="inputScheme" class="form-label">CHOOSE SCHEME </label>
+          <select id="scheme" name="scheme" class="form-select" [(ngModel)]="schemeValue" ngModel>
+            <option *ngIf="optionValue=='male'" >Post Matric Scholarship (Merit-cum-Means Based for Students from Maharashtra)</option>
+            <option *ngIf="optionValue=='male'" >Merit Based Scholarship</option>
+            <option *ngIf="optionValue=='female'">Pragati Scholarship</option>
+            <option  *ngIf="optionValue=='male'">Central Scholarship Scheme</option>
+            <option *ngIf="optionValue=='female'">Central Scholarship</option>
+            <option *ngIf="optionValue=='female'">Merit Based Scholarship</option>
+          </select>
+        </div>
+          <div class="alert alert-danger" role="alert" *ngIf="optionValue=='female'"> 
+            <ul><li>Scholarship for Girls have Pragati Scholarship and can be applicable for Two Girls per Family with Family income < 8lpa.</li>
+            </ul>
+          </div>
+          <div class="alert alert-danger" role="alert" *ngIf="schemeValue==2"> 
+            <ul>
+            <li>Merit Based Scholarship has National Talent Search Examination , which should be attempted.</li></ul>
+          </div>
+          
+          <div class="col-12">
+            <label for="inputDocument" class="form-label">Documents&nbsp;</label>
+            <span style="color:red">( *Upload all the documents in one file )</span>
+            <input type="file" id="inputDocument" class="form-control" name="studentDocuments"  (change)="onFileChange($event)">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                ALL THE DETAILS FURNISHED BY ME ARE TRUE TO THE BEST OF MY 
+              KNOWLEDGE. IF ANY MISTAKES ARE FOUND THEN I MAY BE DISQUALIFIED FOR SCHOLARSHIP SCHEME ANNOUNCED BY GOVERNMENT 
+              OF INDIA OR MY STATE GOVERNMENT.
+              </label> 
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-success" >Submit</button>
+          </div>  
+      </form>
+    </div>
+    
+  

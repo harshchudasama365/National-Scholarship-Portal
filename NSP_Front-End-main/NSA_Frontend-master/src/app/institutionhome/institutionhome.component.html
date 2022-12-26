@@ -1,0 +1,42 @@
+<button class="btn btn-dark" routerLink="/home">Logout</button>
+<div>
+ 
+<h2>Welcome to the Institute's homepage</h2>
+<style>
+    h2 {
+      text-align: center;
+    }
+</style>
+<div class="table1">
+    <table style="width:40%">
+        <tr >
+          <th> Name:</th>
+          <td>{{instituteData.name}}</td>
+          </tr>
+          <tr>
+          <th>Institute Code</th>
+          <td>{{instituteData.instiCode}}</td>
+        </tr>
+        <tr>
+            <th>Institute Location</th>
+            <td>{{instituteData.state}},{{instituteData.district}},{{instituteData.pincode}}</td>
+            </tr>
+        <tr>
+            <th>Principle Name</th>
+            <td>{{instituteData.prinName}}</td>
+            </tr>
+            <tr>
+              <th>Application status</th>
+              <td><b>{{instituteData.application_status}}</b></td>
+              </tr>
+      </table>
+    
+    </div>
+
+</div>
+
+<div class="table2">
+ 
+      <button type="button" class="btn btn-success"><a routerLink="/studentapplicationinst">View Student Applications</a> </button>
+     
+</div>

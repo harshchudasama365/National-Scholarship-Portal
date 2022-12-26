@@ -1,0 +1,13 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+       
+}
+.alert{
+    position: absolute;
+    padding: 10px;
+    left:10%;
+    top:50%;
+}

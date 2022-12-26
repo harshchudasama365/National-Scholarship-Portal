@@ -1,0 +1,22 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.basic{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.btn a{
+  color: aliceblue;
+  text-decoration: none;
+}
+.wrapper{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 180px;
+}
+ul li{
+padding-left: 10px;
+padding-right: 10px;
+}

@@ -1,0 +1,23 @@
+<div class="container login-container" >
+    <div class="row">
+    <div class="shadow p-3 mb-5 bg-body rounded">
+        <div class="row" >
+            <h2>STUDENT LOGIN</h2>
+            <form [formGroup]="form" class="row g-3" (ngSubmit)="checkLogin()" ngNativeValidate>
+                <div class="col-4">
+                    <label for="aadharNumber" class="form-label">AadharNumber</label>
+                    <input formControlName="aadharNumber" type="text" class="form-control" [(ngModel)]="aadharNumber" name="aadharNumber" placeholder="Enter your aadharNumber" >
+                </div>
+                <div class="col-4">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input formControlName="password" type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="enter password" >
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="login-btn btn btn-success" value="login" [disabled]="form.invalid" >Login</button>
+                </div>
+                
+            </form>
+        </div>    
+        </div>  
+    </div>
+</div>

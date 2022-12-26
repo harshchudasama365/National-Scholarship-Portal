@@ -1,0 +1,61 @@
+.nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img
+{
+    height: 150px;
+    margin-top: 50px;
+    width: fit-content;
+}
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 37%;
+    padding-right: 28%;
+    width: fit-content;
+}
+#lat{
+    margin-left: 40px;
+}
+.float-box{
+    padding: 20px;
+}
+.float-child{
+    float: left;
+    width: 32%;
+    padding: 20px;
+}
+
+.news{
+    padding-top: 25px;
+}
+.mssg{
+    padding-top: 25px;
+}
+#btn1{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#btn5{
+    margin-top: 70px;
+}
+.container-md-01{
+    float: left;
+    margin-left: 0;
+}
+.box3{
+    padding-top: 20px;
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    margin-right: 1em;
+ }

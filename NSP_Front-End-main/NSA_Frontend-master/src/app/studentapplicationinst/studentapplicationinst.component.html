@@ -1,0 +1,168 @@
+<button class="btn btn-dark" routerLink="/home">Logout</button>
+<div class="basic"> 
+    <h1>SCHOLARSHIP APPLICATION DETAILS</h1>
+    <hr>
+    <!--div *ngFor="let application1 of Studentapplication"-->
+      
+    <form class="row g-3" *ngFor="let application of Studentapplication">
+    <details>
+        <summary>
+              <b> Name :</b> {{application.name}}<br>
+              <b>Status :</b> {{application.finalStatus}}
+        </summary>
+      <div class="col-4">
+        <label for="inputEmail" class="form-label">Full Name: {{application.name}}</label>
+      </div>
+      <div class="col-4">
+        <label for="inputEmail" class="form-label">Registered Email: {{application.email}} </label>
+      </div>
+      <div class="col-4">
+        <label for="inputPhoneNo" class="form-label">Registered Phone Number: {{application.phoneNumber}}</label>
+      </div>
+      <div class="col-md-6">
+        <label for="inputAadhar" class="form-label">AADHAR NUMBER: {{application.aadhar}} </label>
+      </div>
+      <div class="col-md-4">
+        <label for="inputDOB" class="form-label"> DOB : {{application.dob}}</label> 
+    </div>
+      <div class="col-md-4">
+          <label for="inputReligion" class="form-label">RELIGION: {{application.religion}}</label>
+      </div>
+      <div class="col-6">
+        <label for="inputCommunity" class="form-label">COMMUNITY/CATEGORY: {{application.community}}</label>
+      </div>
+      <div class="col-6">
+        <label for="inputFatherName" class="form-label">FATHER NAME: {{application.fatherName}}</label>
+      </div>
+      <div class="col-md-6">
+        <label for="inputMotherName" class="form-label">MOTHER NAME: {{application.motherName}}</label>
+      </div>
+      <div class="col-md-6">
+        <label for="inputfamilyannualincome" class="form-label">FAMILY ANNUAL INCOME: {{application.annualIncome}}</label>
+      </div>
+      <hr>
+      <h1>ACADEMIC DETAILS</h1>
+      
+      <div class="col-md-4">
+          <label for="inputInstitutionName" class="form-label">INSTITUTION NAME: {{application.institution}}</label>
+      </div>
+      <div class="col-4">
+          <label for="inputPresentClass" class="form-label">Present Class: {{application.presentClass}}</label>
+      </div>
+      <div class="col-4">
+          <label for="inputPresentClassYear" class="form-label">Present Class Year: {{application.presentClassYear}}</label>
+      </div>
+      <div class="col-md-4">
+          <label for="inputModeofStudy" class="form-label">MODE OF STUDY: {{application.modeOfStudy}}</label>
+      </div>
+      <div class="col-4">
+          <label for="inputClassStartDate" class="form-label">Class Start Date: {{application.classStartDate}}</label>
+      </div>
+      <div class="col-6">
+          <label for="inputUniversityName" class="form-label">University/BoardName: {{application.university}}</label>
+      </div>
+      <div class="col-4">
+          <label for="inputPreviousClass" class="form-label">Previous Class: {{application.previousClass}}</label>
+      </div>
+      <div class="col-4">
+          <label for="inputPreviousClassYear" class="form-label">Previous Class Year: {{application.previousClassYear}}</label>
+      </div>
+      <div class="col-md-4">
+          <label for="inputpreviouspercentage" class="form-label">Previous Class Percentage: {{application.previousPercentage}}</label>
+      </div>
+      <hr>
+
+      <h1>X<sup>th</sup>CLASS</h1>
+      <div class="col-md-6">
+          <label for="inputRollNo" class="form-label">ROLL NUMBER: {{application.tenthRollNo}}</label>
+      </div>
+      <div class="col-6">
+          <label for="inputBoardName" class="form-label">BOARD NAME: {{application.tenthBoard}}</label>
+      </div>
+      <div class="col-6">
+          <label for="inputPassingYear" class="form-label">Passing Year: {{application.tenthYear}}</label>
+      </div>
+      <div class="col-md-4">
+          <label for="inputpercentage" class="form-label">Percentage Obtained: {{application.tenthPercentage}}</label>
+      </div>
+      <hr>
+
+      <h1>XII<sup>th</sup>CLASS</h1>
+      <div class="col-md-6">
+        <label for="inputRollNo" class="form-label">ROLL NUMBER: {{application.twelthRollNo}}</label>
+      </div>
+      <div class="col-6">
+          <label for="inputBoardName" class="form-label">BOARD NAME: {{application.twelthBoard}}</label>
+      </div>
+      <div class="col-6">
+          <label for="inputPassingYear" class="form-label">Passing Year: {{application.twelthYear}}</label>
+      </div>
+      <div class="col-md-4">
+        <label for="inputpercentage" class="form-label">Percentage Obtained: {{application.twelthPercentage}}</label>
+      </div>
+      <hr>
+      <h1>FEE DETAILS</h1>
+      <div class="col-md-4">
+          <label for="inputAdmissionFee" class="form-label">ADMISSION FEE: {{application.admissionFee}}</label>
+      </div>
+      <div class="col-md-4">
+        <label for="inputTuitionFee" class="form-label">TUITION FEE: {{application.tuitionFee}}</label>
+      </div>
+      <div class="col-md-4">
+        <label for="inputOtherFee" class="form-label">OTHER FEE: {{application.otherFee}}</label>
+      </div>
+      
+      <hr>
+      <h1>OTHER PERSONAL DETAILS</h1>
+      <div class="col-md-6" >
+          <label for="inputIsDisabled" class="form-label">IS DISABLED: {{application.isDisabled}}</label>
+      </div>
+      <div class="col-6">
+          <label for="inputTypeofDisablity" class="form-label">TYPE OF DISABILITY: {{application.typeOfDisability}}</label>
+      </div>
+      <div class="col-6">
+          <label for="inputpercentageofdisability" class="form-label">PERCENTAGE OF DISABILITY: {{application.disabilityPercenage}}</label>
+      </div>
+      <div class="col-md-6">
+        <label for="inputMaritalStatus" class="form-label">MARITAL STATUS: {{application.maritalStatus}}</label>
+      </div>
+      <div class="col-6">
+        <label for="inputParentsProfession" class="form-label">PARENTS PROFESSION: {{application.parentsProfession}}</label>
+      </div>
+
+      <hr>
+      <h1>CONTACT DETAILS</h1>
+      <div class="col-6">
+        <label for="inputState" class="form-label">STATE: {{application.state}}</label>
+      </div>
+      <div class="col-6">
+        <label for="inputDistrict" class="form-label">DISTRICT: {{application.district}}</label>
+      </div>
+      <div class="col-6">
+        <label for="inputTaluk" class="form-label">TALUK/Mandal: {{application.taluk}}</label>
+      </div>
+      <div class="col-6">
+        <label for="inputHno" class="form-label">HOUSE NUMBER: {{application.houseNo}}</label>
+      </div>
+      <div class="col-6">
+        <label for="inputStreetno" class="form-label">STREET NUMBER: {{application.streerNo}}</label>
+      </div>
+      <div class="col-6">
+        <label for="inputPincode" class="form-label">PINCODE: {{application.pincode}}</label>
+      </div>
+      <div class="col-4">
+          <label for="gender" class="form-label" >GENDER: {{application.gender}}</label> <br>
+        </div>
+        <div class ="container" *ngIf = "application.finalStatus ==null">
+          <b>File {{ file }}</b>
+          <button (click)="download(application.aadhar)" 
+          style="background-color: maroon;color:white;font-size: 1.2em;padding:2px;border:none;"
+          >Download File</button>
+          <button class="btn btn-success" (click)="approve(application.aadhar)" >APPROVE</button>
+          <button class="btn btn-danger" (click)="remove(application.aadhar)">DENY</button>
+          </div>
+    </details>
+        <br><br><hr>
+    </form>
+  
+</div>

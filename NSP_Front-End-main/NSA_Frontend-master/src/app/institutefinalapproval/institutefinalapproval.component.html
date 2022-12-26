@@ -1,0 +1,81 @@
+<button class="btn btn-dark" routerLink="/home">Logout</button>
+<h1 style="color:black; text-align: center;">Institution Registration Details</h1>
+<hr>
+<div class="container" *ngFor="let institute of instituteapplication | async">
+    <form class="row">
+        <div class="col-md-10">
+        <h3>INSTITUTE DETAILS</h3><br>
+        <div class="col-md-4">
+            <label for="inputInstitutionCategory" class="form-label">INSTITUTION CATEGORY: {{institute.instiCat}}</label>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="inputName" class="form-label">Name: <b>{{institute.name}}</b></label>
+            </div>
+            <br>
+            <div class="col-md-4" >
+                <label for="inputState" class="form-label">STATE: {{institute.inststate}}</label>
+            </div>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <label for="inputDistrict" class="form-label"> DISTRICT: {{institute.instdist}} </label>
+        </div>
+        <div class="col-md-4">
+            <label for="inputDISECode" class="form-label">DISE CODE: {{institute.disecode}}</label>
+        </div>
+        <div  class="row">
+            <label for="inputLocation" class="form-label">LOCATION : {{institute.location}}</label>
+        </div>
+        <div class="col-md-4">
+            <label for="inputIstituteType" class="form-label">INSTITUTE TYPE: <b>{{institute.institutionType}}</b></label>
+        </div>
+        <div class="col-md-4">
+            <label for="inputIstituteCode" class="form-label">INSTITUTE CODE: {{institute.instiCode}}</label>
+        </div>
+        <div class="col-md-6">
+            <label for="inputAffiliatedUniversityState" class="form-label">AFFILIATED UNIVERSITY STATE: {{institute.affiUnivState}}</label>
+        </div>
+        <div class="col-md-6">
+            <label for="inputAffiliatedUniversityBoardName" class="form-label">AFFILIATED UNIVERSITY/ BOARD NAME: {{institute.affilatedUBName}}</label>
+        </div>
+        <div class="col-md-12">
+            <label for="inputYearFromWhichAdmissionStarted" class="form-label">YEAR FROM WHICH ADMISSION STARTED: {{institute.yearFWhichAdmiSt}} </label>
+        </div>
+        <div  class="row">
+            <div class="col-md-4">
+                <label for="inputEmail" class="form-label">EMAIL : {{institute.emailid}}</label>
+            </div>
+        </div>
+            <label for="input" class="form-label"> AFFILIATED TO : {{institute.affilatedUBName}}</label><br>
+        <div class="col-md-6">
+            <label for="input" class="form-label"> ADDRESS: {{institute.addressLine1}}</label>
+        </div>
+        <div>
+            <label for="inputCity" class="form-label">CITY : {{institute.city}}</label>
+        </div>
+        <div class="col-md-8">
+            <label for="inputState" class="form-label">STATE: {{institute.state}}</label>
+        </div>
+        <div>
+            <label for="inputDistrict" class="form-label">DISTRICT : {{institute.district}}</label>
+        </div>
+        <div> 
+            <label for="inputPinCode" class="form-label">PIN CODE : {{institute.pincode}}</label>
+        </div>
+            <label for="input" class="form-label"><b>CONTACT DETAILS</b></label>
+        <div class="col-md-8">
+            <label for="inputPrincipalName" class="form-label">PRINCIPAL NAME : {{institute.prinName}}</label>
+        </div>
+        <div> 
+            <label for="inputTelephone" class="form-label">TELEPHONE : {{institute.telephone}}</label>
+        </div>
+        <div>
+          <button class="btn btn-success" (click)="ministerApproval(institute.instiCode)" >APPROVE</button>
+          <button class="btn btn-danger" (click)="ministerReject(institute.instiCode)" >DENY</button>
+    </div>
+    </form>
+    <br><br><hr>
+</div>

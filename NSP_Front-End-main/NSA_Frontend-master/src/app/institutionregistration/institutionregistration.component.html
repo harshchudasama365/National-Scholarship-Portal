@@ -1,0 +1,234 @@
+<h1 style="color:black"><u>Institution Registration</u></h1>
+<hr>
+<div class="container">
+<form class="row" [formGroup]="form" (ngSubmit)="saveInstitution()">
+    
+     <div class="col-md-10">
+         <h3>INSTITUTE DETAILS</h3><br>
+         <div class="col-md-4">
+            <label for="inputInstitutionCategory" class="form-label">INSTITUTION CATEGORY</label>
+            <select formControlName="instiCat" class="form-select" id="instiCat">
+              <option selected>select your institution category</option>
+              <option>Government Institute </option>
+              <option>Govt. Aided Institute </option>
+              <option>Unaided Institute </option>
+            </select>
+            </div>
+        </div><br>
+        <div class="row">
+        <div class="col-md-4">
+            <label for="inputName" class="form-label">Name</label>
+            <input formControlName="name" type="text" class="form-control" id="Name" placeholder="">
+        </div ><br>
+        <div class="col-md-4" >
+        <label for="inputState" class="form-label">STATE</label>
+        <select formControlName="inststate" id="inputInstitutionCategory" class="form-select" id="state">
+          <option selected>select state</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+        </select></div>
+    </div>
+        <br>
+        <div class="col-md-4">
+            <label for="inputDistrict" class="form-label"> DISTRICT </label>
+            <input formControlName="instdist" type="text" class="form-control" id="instdist" placeholder="">
+        </div>
+        <div class="col-md-4">
+            <label for="inputIstituteCode" class="form-label"> INSTITUTE CODE</label>
+            <input formControlName="instiCode" type="text" class="form-control" id="instiCode" placeholder="">
+        </div>
+        <div class="col-md-4">
+            <label for="inputDISECode" class="form-label">DISE CODE</label>
+            <input formControlName="disecode" type="number" class="form-control" id="disecode" placeholder="">
+        </div>
+        <div  class="row">
+            <label for="inputLocation" class="form-label">LOCATION (RURAL/URBAN)</label>
+            <input formControlName="location" type = "text" class="form-control" id="location" placeholder="">
+            </div>
+        <div class="col-md-4">
+            <label for="inputIstituteType" class="form-label">INSTITUTE TYPE</label>
+            <select formControlName="institutionType" id="inputInstituteType" class="form-select" id="institutetype">
+              <option selected>Select Type</option>
+              <option>Junior College</option>
+              <option>Diploma College</option>
+              <option>Under Graduate College</option>
+              <option>Post Graduate College</option>
+              <option>Ph.D. College </option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputAffiliatedUniversityState" class="form-label">AFFILIATED UNIVERSITY STATE</label>
+            <select formControlName="affiUnivState" id="inputAffiliatedUniversityState" class="form-select" id="affiUnivState">
+              <option selected>Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+            </select>
+            </div>
+        <div class="col-md-6">
+            <label for="inputAffiliatedUniversityBoardName" class="form-label">AFFILIATED UNIVERSITY/ BOARD NAME</label>
+            <input formControlName="affilatedUBName" type="text" class="form-control" id="affilatedUBName" placeholder="">
+        </div>
+        <div class="col-md-12">
+            <label for="inputYearFromWhichAdmissionStarted" class="form-label">YEAR FROM WHICH ADMISSION STARTED </label>
+            <input formControlName="yearFWhichAdmiSt" type="text" class="form-control" id="yearFWhichAdmiSt" placeholder="">
+        </div>
+        <div  class="row">
+            <div class="col-md-4">
+                <label for="inputEmail" class="form-label">EMAIL :</label>
+                <input formControlName="emailid" type="text" class="form-control" id="emailid" placeholder="" >
+            </div>
+        </div>
+        <div class="col-md-8">
+            <label for="inputSetPassword" class="form-label">Set Password</label>
+            <input formControlName="password" type="text" class="form-control" id="password" placeholder="">
+        </div>
+        <div class="col-md-8">
+          <label for="input" class="form-label"> ADDRESS:</label>
+        <div class="col-md-8">
+            <label for="inputLine1" class="form-label">LINE 1:</label>
+            <input formControlName="addressLine1" type="text" class="form-control" id="addressLine1" placeholder="">
+        </div>
+        <div> <label for="inputLine2" class="form-label">LINE 2:</label>
+            <input formControlName="addressLine2" type="text" class="form-control" id="addressLine2" placeholder="">
+        </div>
+        <div> <label for="inputCity" class="form-label">CITY :</label>
+            <input formControlName="city" type="text" class="form-control" id="city" placeholder="">
+        </div>
+        <div class="col-md-8">
+            <label for="inputState" class="form-label">STATE</label>
+            <select formControlName="state" id="inputState" class="form-select" id="state" >
+              <option selected>Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+            </select>
+            </div>
+            <div> <label for="inputDistrict" class="form-label">DISTRICT :</label>
+                <input formControlName="district" type="text" class="form-control" id="district" placeholder="">
+            </div>
+            <div> <label for="inputPinCode" class="form-label">PIN CODE :</label>
+                <input formControlName="pincode" type="number" class="form-control" id="pincode" placeholder="">
+            </div>
+            <label for="input" class="form-label">CONTACT DETAILS:</label>
+            <div class="col-md-8">
+                <label for="inputPrincipleName" class="form-label">PRINCIPLE NAME :</label>
+                <input formControlName="prinName" type="text" class="form-control" id="inputPrincipleName" placeholder="" required>
+            </div>
+            <div> <label for="inputTelephone" class="form-label">MOBILE :</label>
+                <input formControlName="telephone" type="text" class="form-control" id="telephone" placeholder="" required>
+            </div>
+            <div class="form-check" class="col-md-10">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                <label class="form-check-label" for="flexCheckChecked" >
+                  ALL THE DETAILS AND DOCUMENTS SUBMITTED BY US ARE VALID AND TRUE.
+                  IF FOUND GUILTY OF SUBMITTING INVALID DOCUMENTS, WE MAY BE HELD RESPONSIBLE FOR THAT ACT BY US.
+                </label>
+              </div>
+             <div > <button class="btn btn-success" type="submit" (click) = "onClick()">SUBMIT</button>
+
+            <button class="btn btn-danger" type="reset" value="Reset">RESET</button>
+            </div>
+            </div>
+</form>
+</div>

@@ -1,0 +1,19 @@
+div {
+    text-align: center;
+    margin: 5px;
+    
+    border-width: 0px;
+    border-style: solid;
+    width: 100%;
+}
+
+h1{
+    color: rgb(5, 5, 99);
+    text-align: center;
+}
+.btn{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}

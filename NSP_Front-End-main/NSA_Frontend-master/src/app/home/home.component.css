@@ -1,0 +1,48 @@
+.wrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+ul li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#lat{
+    margin-left: 40px;
+}
+.float-box{
+    padding: 20px;
+}
+.float-child{
+    float: left;
+    width: 32%;
+    padding: 20px;
+}
+
+.news{
+    padding-top: 25px;
+}
+.mssg{
+    padding-top: 25px;
+   
+}
+
+
+#btn1{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#btn5{
+    margin-top: 70px;
+}
+.container-md-01{
+    float: left;
+    margin-left: 0;
+}
+.box3{
+    padding-top: 20px;
+}
+.change{
+    width: 100%;
+}
